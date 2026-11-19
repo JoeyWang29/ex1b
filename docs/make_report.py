@@ -214,7 +214,8 @@ def cover() -> None:
     for _ in range(5):
         doc.add_paragraph()
 
-    rows = [("姓    名", "王恩泽"), ("学    号", "202628007329016"), ("院    系", "中国科学院大学 计算机科学与技术学院"), ("课程教师", "刘  鹏"),
+    rows = [("姓    名", "王恩泽"), ("学    号", "202628007329016"), ("学    校", "中国科学院大学"),
+            ("院    系", "计算机科学与技术学院"), ("课程教师", "刘  鹏"),
             ("提交日期", "2026 年 11 月 24 日")]
     table = doc.add_table(rows=0, cols=2)
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
@@ -234,7 +235,7 @@ def cover() -> None:
         doc.add_paragraph()
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run = p.add_run("源代码仓库：______________________（提交前填写 Git 链接）")
+    run = p.add_run("源代码仓库：https://github.com/JoeyWang29/ex1b")
     cn(run, size=9, color=GREY)
     doc.add_page_break()
 
@@ -277,7 +278,8 @@ def part_one() -> None:
     )
 
     H2("1.2  交付物与运行方式")
-    P("交付物按课件要求组织：源码目录、演示视频与报告；代码托管在 Git 仓库并保留完整提交记录。"
+    P("交付物按课件要求组织：源码目录、演示视频与报告；代码托管在 GitHub（https://github.com/JoeyWang29/ex1b），"
+      "保留了 7 条按模块划分的提交记录。"
       "工程可直接在 Windows 上以 Python 3.13 运行，无第三方运行时依赖（仅 GUI 使用标准库 tkinter，"
       "绘图脚本使用 matplotlib）。")
     CODE("""securefile/
