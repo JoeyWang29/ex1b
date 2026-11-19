@@ -1,0 +1,13 @@
+# runtime state: certificates, user database, transferred files
+run/
+# python
+__pycache__/
+*.pyc
+# generated artefacts (rebuild with docs/make_report.py)
+docs/report.docx
+# submission bundle and raw recordings
+deliverable/
+demo/out/
+# os
+Thumbs.db
+.DS_Store

@@ -1,0 +1,20 @@
+{
+  "host": "0.0.0.0",
+  "port": 9443,
+  "data_root": "run/data",
+  "users_db": "run/state/users.db",
+  "tls": {
+    "cert": "run/certs/server-cert.pem",
+    "key": "run/certs/server-key.pem",
+    "ca": "run/certs/ca-cert.pem"
+  },
+  "limits": {
+    "max_conn": 256,
+    "max_conn_per_ip": 8,
+    "fail_threshold": 5,
+    "lock_seconds": 60,
+    "max_streams": 4,
+    "idle_timeout": 75.0,
+    "keepalive": 20.0
+  }
+}
