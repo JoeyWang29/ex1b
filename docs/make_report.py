@@ -279,7 +279,7 @@ def part_one() -> None:
 
     H2("1.2  交付物与运行方式")
     P("交付物按课件要求组织：源码目录、演示视频与报告；代码托管在 GitHub（https://github.com/JoeyWang29/ex1b），"
-      "保留了 7 条按模块划分的提交记录。"
+      "保留了按模块划分的完整提交记录（协议、服务端、客户端、安全脚本、测试与文档）。"
       "工程可直接在 Windows 上以 Python 3.13 运行，无第三方运行时依赖（仅 GUI 使用标准库 tkinter，"
       "绘图脚本使用 matplotlib）。")
     CODE("""securefile/
