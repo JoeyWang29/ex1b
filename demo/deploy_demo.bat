@@ -28,7 +28,7 @@ ping -n 5 127.0.0.1 >nul
 echo.
 echo  [2/6] PKI  -  private CA issues server and client certificates
 echo  ----------------------------------------------------------------
-echo   script : scripts/gen_certs.sh  (CA -> server -> per-account client certs)
+echo   script : scripts/gen_certs.sh  (root CA signs server and one cert per account)
 echo.
 openssl x509 -in run/certs/ca-cert.pem -noout -subject
 openssl x509 -in run/certs/server-cert.pem -noout -subject -ext subjectAltName
